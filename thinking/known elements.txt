@@ -4,4 +4,4 @@ different rooms with doors (metroid-style)
 secret passages and rooms
 different weapons
 boss fights
-leveling system and skill tree with NO exp gain skills
+automatic saving after pickups, travel, or bosses
