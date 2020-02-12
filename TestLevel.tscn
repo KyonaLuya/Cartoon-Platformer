@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Tileset.tres" type="TileSet" id=1]
-[ext_resource path="res://assets/icon.png" type="Texture" id=2]
+[ext_resource path="res://assets/sunset test background.png" type="Texture" id=2]
 
 [node name="TestLevel" type="Node2D"]
 
@@ -17,6 +17,6 @@ tile_data = PoolIntArray( -262142, 0, 0, -262141, 0, 0, -262140, 0, 0, -262139, 
 motion_scale = Vector2( 0.2, 0.2 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( 520.372, 299.506 )
-scale = Vector2( 20, 10 )
+position = Vector2( 528.994, 558.166 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )

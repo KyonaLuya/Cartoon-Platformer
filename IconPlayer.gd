@@ -45,6 +45,7 @@ func _process(delta):
 		velocity.x += SPEED
 	if Input.is_action_pressed("ui_left"):
 		velocity.x -= SPEED
+		
 	if Input.is_action_pressed("ui_up"):
 		extend_jump(delta)
 	if is_on_floor():
