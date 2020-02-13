@@ -6,6 +6,7 @@ var velocity : Vector2
 var jump_timer
 var time_off_floor
 var time_since_jump
+var facing
 
 const SPEED := 500.0
 const GRAVITY := 5000.0
@@ -22,6 +23,7 @@ func _ready():
 	jump_timer = 0
 	time_off_floor = 0
 	time_since_jump = 0
+	facing = "left"
 
 
 func initial_jump():
@@ -43,8 +45,10 @@ func _process(delta):
 	time_since_jump += delta
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += SPEED
+		facing = "right"
 	if Input.is_action_pressed("ui_left"):
 		velocity.x -= SPEED
+		facing = "left"
 		
 	if Input.is_action_pressed("ui_up"):
 		extend_jump(delta)
@@ -60,4 +64,3 @@ func _process(delta):
 	
 	move_and_slide(velocity, Vector2(0, -1))
 		
-	

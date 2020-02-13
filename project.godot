@@ -19,6 +19,10 @@ config/name="Cartoon Platformer"
 run/main_scene="res://Game.tscn"
 config/icon="res://assets/icon.png"
 
+[autoload]
+
+Globals="*res://Globals.gd"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
