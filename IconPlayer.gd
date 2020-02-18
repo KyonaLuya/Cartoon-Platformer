@@ -63,4 +63,20 @@ func _process(delta):
 		initial_jump()
 	
 	move_and_slide(velocity, Vector2(0, -1))
+	
+	if velocity.x != 0:
+		print(global_scale)
+		if velocity.x < 0:
+##	    	$Sprite.flip_h = false
+#			set_global_scale(Vector2(1,1))
+			if global_scale != Vector2(1,1):
+				apply_scale(Vector2(-1,1))
+#			set_global_transform(Transform2D.IDENTITY)
+		else:
+##	    	$Sprite.flip_h = true
+#			set_global_transform(Transform2D.FLIP_X)
+			if global_scale != Vector2(1,-1):
+#				set_global_scale(Vector2(-1, 1))
+				apply_scale(Vector2(-1,1))
 		
+
