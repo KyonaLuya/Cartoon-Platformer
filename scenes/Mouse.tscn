@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/Mouse.gd" type="Script" id=1]
+[ext_resource path="res://assets/mouse.png" type="Texture" id=2]
+
+[node name="Mouse" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 15.856, -14.3583, 46.166, -0.735878, 51.9555, 17.6544, 31.1813, 42.5154, -33.5254, 42.5154, -74.0523, 34.342, -87.3342, 22.0817, -75.4145, 2.66974, -53.278, -9.59048 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
